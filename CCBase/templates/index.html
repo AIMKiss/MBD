@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Database Credentials</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container index-container">
+        <h1>Step 1: Enter Database Credentials</h1>
+        <form method="POST" class="index-form">
+            <label for="user">User:</label>
+            <input type="text" id="user" name="user" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="host">Host:</label>
+            <input type="text" id="host" name="host" required>
+            <label for="database">Database:</label>
+            <input type="text" id="database" name="database" required>
+            <button type="submit">Confirm Connection</button>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

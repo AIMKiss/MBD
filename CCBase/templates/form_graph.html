@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Step 2: Form Graph from Database</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container form-graph-container">
+        <h1>Form Graph from Database</h1>
+        <form method="POST" class="form-graph-form">
+            <button type="submit" name="action" value="{% if image_url %}recreate{% else %}form{% endif %}">
+                {% if image_url %}Recreate{% else %}Form Graph{% endif %}
+            </button>
+            {% if image_url %}
+            <button type="submit" name="action" value="confirm">Confirm</button>
+            {% endif %}
+        </form>
+        {% if image_url %}
+        <h2>Graph Visualization</h2>
+        <img src="{{ image_url }}" alt="Graph Visualization">
+        {% endif %}
+    </div>
+</body>
+</html>

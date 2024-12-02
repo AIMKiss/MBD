@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Identify Clusters</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container identify-clusters-container">
+        <h1>Step 3: Identify Clusters</h1>
+        <form method="POST" class="identify-clusters-form">
+            {% if n_clusters %}
+            <button type="submit" name="action" value="reidentify">Recalculate</button>
+            <button type="submit" name="action" value="confirm">Confirm</button>
+            <p>Number of Clusters: {{ n_clusters }}</p>
+            {% else %}
+            <button type="submit" name="action" value="identify">Identify Clusters</button>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
