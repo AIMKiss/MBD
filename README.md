@@ -4,41 +4,6 @@
 
 This repository contains the code and resources for my master thesis, which focuses on using machine learning techniques to identify domain models from database structures. The goal is to facilitate the migration of monolithic or modular architectures to microservice-based architectures by identifying potential microservices.
 
-## Table of Contents
-
-- Overview
-- [Project Structure](#project-structure)
-- Installation
-- Usage
-- Methodology
-- Results
-- Contributing
-- License
-- Acknowledgements
-
-## Project Structure
-
-```
-.
-├── adw/
-│   ├── adw_columns_analysis.ipynb
-│   ├── adw_graph_clustering_random_walk.ipynb
-│   └── adw_table_analysis.ipynb
-├── wwi/
-│   ├── wwi_table_analysis_with_random_walk.ipynb
-│   ├── wwi_table_analysis_with_spectral.ipynb
-│   └── tables_and_schemas_wwi.csv
-├── CCBase/
-│   ├── templates/
-│   │   ├── form_graph.html
-│   │   ├── identify_clusters.html
-│   │   ├── perform_clustering.html
-│   └── static/
-│       └── styles.css
-├── database_graph.py
-├── README.md
-└── requirements.txt
-```
 
 ## Installation
 
@@ -121,10 +86,6 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Acknowledgements
 
 I would like to thank my thesis advisor, professors, and colleagues for their support and guidance throughout this project. Special thanks to the open-source community for providing the tools and libraries that made this work possible.
@@ -135,9 +96,9 @@ Feel free to reach out if you have any questions or suggestions!
 
 ---
 
-**Author**: Your Name  
-**Email**: your.email@example.com  
-**LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+**Author**: Tadas Stankevičius 
+**Email**: tadas.stankevicius@stud.vilniustech.lt 
+**LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/tadas-stankevicius-b59540196/)
 
 ---
 
